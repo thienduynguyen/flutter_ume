@@ -12,7 +12,7 @@ enum BarStyle {
   border,
 }
 
-class SearchBar extends StatefulWidget {
+class UmeSearchBar extends StatefulWidget {
   final String placeHolder;
   final bool autofocus;
   final bool enabled;
@@ -28,7 +28,7 @@ class SearchBar extends StatefulWidget {
   final OnSubmitHandle? onSubmitHandle;
   final OnFocusChangeHandle? onFocusChangeHandle;
 
-  SearchBar({
+  UmeSearchBar({
     Key? key,
     this.placeHolder = '请输入要搜索的内容',
     this.autofocus = false,
@@ -50,7 +50,7 @@ class SearchBar extends StatefulWidget {
   _SearchInputState createState() => _SearchInputState();
 }
 
-class _SearchInputState extends State<SearchBar> {
+class _SearchInputState extends State<UmeSearchBar> {
   bool _showClearIcon = false;
   TextEditingController _inputController = TextEditingController();
   FocusNode _focusNode = FocusNode();

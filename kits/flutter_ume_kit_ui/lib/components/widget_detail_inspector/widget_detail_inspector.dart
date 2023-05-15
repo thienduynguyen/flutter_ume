@@ -199,7 +199,7 @@ class __InfoPageState extends State<_InfoPage> {
               Padding(
                 padding: const EdgeInsets.only(
                     left: 12, right: 12, top: 10, bottom: 10),
-                child: SearchBar(
+                child: UmeSearchBar(
                     placeHolder: '请输入要搜索的widget', onChangeHandle: _textChange),
               ),
               Expanded(
